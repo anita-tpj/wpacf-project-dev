@@ -1,0 +1,46 @@
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+// Basic class is g-c and up to column number: g-c1 g-c2 etc...
+// To break on some breakpoint (like s (576px)), it will be g-cs1, g-cs3, g-cs7...
+
+$grid-breakpoints: (
+        _: 0,
+        xs: 480px,
+        s: 576px,
+        m: 768px,
+        l: 992px,
+        xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.g-container` for different screen sizes.
+
+$container-max-widths: (
+        s: 540px,
+        m: 720px,
+        l: 960px,
+        xl: 1140px
+) !default;
+
+@include _assert-ascending($container-max-widths, '$container-max-widths');
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+$mobile-landscape-width: 560px;
+$mobile-landscape-height: 480px;
+
+$narrow-laptop-width: 992px;
+$narrow-laptop-height: 650px;

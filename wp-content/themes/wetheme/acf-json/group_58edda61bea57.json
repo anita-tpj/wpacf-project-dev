@@ -1,0 +1,349 @@
+{
+  "key": "group_58edda61bea57",
+  "title": "[ THEME ] - Post Content",
+  "fields": [
+    {
+      "message": "You have to set feature image in order for layout to work.",
+      "esc_html": 0,
+      "new_lines": "wpautop",
+      "key": "field_597056567885f",
+      "label": "Important :: SET FEATURE IMAGE",
+      "name": "",
+      "type": "message",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    },
+    {
+      "tabs": "all",
+      "toolbar": "basic",
+      "media_upload": 0,
+      "default_value": "This is your post text content. Start writing!",
+      "delay": 0,
+      "key": "field_58eddaf9c50a6",
+      "label": "Text Content",
+      "name": "tcontent",
+      "type": "wysiwyg",
+      "instructions": "Use this field to type content for your post.",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    },
+    {
+      "layouts": [
+        {
+          "key": "58eddbdf2e7fc",
+          "name": "f_tb",
+          "label": "New Text Block",
+          "display": "block",
+          "sub_fields": [
+            {
+              "tabs": "all",
+              "toolbar": "full",
+              "media_upload": 0,
+              "default_value": "Type your text here!",
+              "delay": 0,
+              "key": "field_58eddc6cc50a8",
+              "label": "Text Block",
+              "name": "tb",
+              "type": "wysiwyg",
+              "instructions": "Add new text for this post",
+              "required": 1,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "58eddca9c50a9",
+          "name": "f_ib",
+          "label": "New Image",
+          "display": "block",
+          "sub_fields": [
+            {
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "key": "field_58ede0adc50ab",
+              "label": "Image Title",
+              "name": "ib_title",
+              "type": "text",
+              "instructions": "Add image title (optionally)",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "return_format": "url",
+              "preview_size": "thumbnail",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "key": "field_58eddca9c50aa",
+              "label": "Image",
+              "name": "ib",
+              "type": "image",
+              "instructions": "Add new single image",
+              "required": 1,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "default_value": 0,
+              "message": "Check if this is a link image",
+              "ui": 1,
+              "ui_on_text": "This is a link",
+              "ui_off_text": "This is not link",
+              "key": "field_5901ba7a68eee",
+              "label": "Link or not?",
+              "name": "ib_link",
+              "type": "true_false",
+              "instructions": "Is this image link or not?",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "layout": "vertical",
+              "choices": {
+                "Internal": "Internal",
+                "External": "External"
+              },
+              "default_value": "Internal",
+              "other_choice": 0,
+              "save_other_choice": 0,
+              "allow_null": 0,
+              "return_format": "value",
+              "key": "field_5901bac468eef",
+              "label": "Type of Link",
+              "name": "ib_link_type",
+              "type": "radio",
+              "instructions": "What type of link is this? (Internal or External)\r\nNOTE: Internal is link to this website's page or post, External is link to outside of website",
+              "required": 1,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_5901ba7a68eee",
+                    "operator": "==",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "post_type": [],
+              "taxonomy": [],
+              "allow_null": 0,
+              "multiple": 0,
+              "allow_archives": 1,
+              "key": "field_5901bb8d68ef0",
+              "label": "Link",
+              "name": "link_i",
+              "type": "page_link",
+              "instructions": "Choose link for this image",
+              "required": 1,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_5901ba7a68eee",
+                    "operator": "==",
+                    "value": "1"
+                  },
+                  {
+                    "field": "field_5901bac468eef",
+                    "operator": "==",
+                    "value": "Internal"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "default_value": "",
+              "placeholder": "",
+              "key": "field_5901bbb668ef1",
+              "label": "Link",
+              "name": "link_e",
+              "type": "url",
+              "instructions": "Enter link for this image",
+              "required": 1,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_5901ba7a68eee",
+                    "operator": "==",
+                    "value": "1"
+                  },
+                  {
+                    "field": "field_5901bac468eef",
+                    "operator": "==",
+                    "value": "External"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "default_value": "",
+              "new_lines": "br",
+              "maxlength": "",
+              "placeholder": "",
+              "rows": "",
+              "key": "field_58ede0ccc50ac",
+              "label": "Image Description",
+              "name": "ib_desc",
+              "type": "textarea",
+              "instructions": "Add image description (optionally)",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "58ede0fcc50ad",
+          "name": "f_gb",
+          "label": "New Gallery",
+          "display": "block",
+          "sub_fields": [
+            {
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "key": "field_58ede13bc50af",
+              "label": "Gallery Title",
+              "name": "gb_title",
+              "type": "text",
+              "instructions": "Add title for this gallery (optional)",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "library": "all",
+              "min": "",
+              "max": "",
+              "min_width": 800,
+              "min_height": 600,
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "insert": "append",
+              "key": "field_58ede12ec50ae",
+              "label": "Gallery",
+              "name": "gb",
+              "type": "gallery",
+              "instructions": "Add images to this gallery.\r\nImages must be at least 800px wide and 600px in height",
+              "required": 1,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              }
+            }
+          ],
+          "min": "",
+          "max": ""
+        }
+      ],
+      "min": "",
+      "max": "",
+      "button_label": "Add Content",
+      "key": "field_58eddbd7c50a7",
+      "label": "Content",
+      "name": "content",
+      "type": "flexible_content",
+      "instructions": "Add blocks of elements that you need for this post. (this is in case, normal editor above isn't enough, and you need to add galleries, images and more text after these...)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "the_content",
+    "excerpt"
+  ],
+  "active": 1,
+  "description": "",
+  "modified": 1501237030
+}

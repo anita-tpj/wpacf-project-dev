@@ -1,0 +1,94 @@
+// Use $font-path from _vars/_base.scss as path to fonts folder or update it here
+// Use https://transfonter.org/ to generate fonts and update font path here
+// Default font path (relative to style.css) is ./src/fonts (that is value of $font-path)
+
+// Lato
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato-Light'),
+    url('#{$font-path}/Lato/Lato-Light.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'),
+    url('#{$font-path}/Lato/Lato-Regular.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Black'), local('Lato-Black'),
+    url('#{$font-path}/Lato/Lato-Black.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+    url('#{$font-path}/Lato/Lato-BoldItalic.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Black Italic'), local('Lato-BlackItalic'),
+    url('#{$font-path}/Lato/Lato-BlackItalic.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Italic'), local('Lato-Italic'),
+    url('#{$font-path}/Lato/Lato-Italic.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'),
+    url('#{$font-path}/Lato/Lato-Bold.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato-HairlineItalic'),
+    url('#{$font-path}/Lato/Lato-HairlineItalic.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-HairlineItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato-Hairline'),
+    url('#{$font-path}/Lato/Lato-Hairline.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-Hairline.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato-LightItalic'),
+    url('#{$font-path}/Lato/Lato-LightItalic.woff') format('woff'),
+    url('#{$font-path}/Lato/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}

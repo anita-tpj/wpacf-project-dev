@@ -1,0 +1,9 @@
+# Ignore compiled css and css map
+style.css
+style.css.map
+src/scripts/scripts.min.js
+src/scripts/scripts.min.js.map
+lib/acf/acf.css
+lib/acf/acf.css.map
+lib/woocommerce/woo.css
+lib/woocommerce/woo.css.map

@@ -1,0 +1,26 @@
+//sass-lint:disable no-css-comments
+/**
+Theme Name: wetheme
+Theme URI: https:/wall-E.rs
+Author: wall-E
+Author URI: https://wall-E.rs
+Description: Custom Wordpress theme made by wall-E
+Version: 1.0
+License: GNU
+License URI: https://wall-E.rs
+Tags: we, wordpress, theme
+Text Domain: wetheme
+
+ */
+
+@import '_utils/functions';
+
+@import 'vars';
+
+@import 'mixins';
+
+@import 'base';
+
+@import 'vendor';
+
+@import 'site';

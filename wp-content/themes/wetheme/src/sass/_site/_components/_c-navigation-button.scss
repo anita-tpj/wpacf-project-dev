@@ -1,0 +1,123 @@
+// TODO Delete unnecessary styles once you chose menu icon
+$menu-button-color: $white;
+$menu-button-color-active: $black;
+$menu-button-color-scrolled: $black;
+$menu-button-width: 26px;
+$menu-button-height: 16px;
+$menu-bun-width: 3px;
+
+.site-menu-button {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    cursor: pointer;
+    transform: scale3d(1, 1, 1);
+    margin-left: auto;
+    z-index: 20;
+
+    @include media-up(l) {
+        display: none;
+    }
+
+    span {
+        position: absolute;
+        display: block;
+        height: $menu-bun-width; width: 100%;
+        background-color: $menu-button-color;
+
+        .scroll & {
+            background-color: $menu-button-color-scrolled;
+        }
+    }
+
+    &.v1 {
+        width: $menu-button-width; height: $menu-button-height;
+
+        span {
+            left: 0;
+            transition: .22s ease-in;
+
+            &:first-child {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+            }
+
+            &:last-child {
+                top: 100%;
+            }
+        }
+
+        .m-open & {
+
+            span {
+                background-color: $menu-button-color-active;
+
+                &:first-child {
+                    top: 50%;
+                    transform: rotateZ(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    top: 50%;
+                    transform: rotateZ(-45deg);
+                }
+            }
+        }
+    }
+
+    &.v2 {
+        width: $menu-button-width; height: $menu-button-height;
+
+        span {
+            left: auto; right: 0;
+            background-color: $menu-button-color-active;
+            transition: .2s ease-in;
+
+            &:first-child {
+                top: 1px;
+            }
+
+            &:nth-child(2) {
+                top: calc(50% - 1px);
+                width: 80%;
+                transition: width .2s .4s;
+            }
+
+            &:last-child {
+                top: calc(100% - 3px);
+            }
+        }
+
+        .m-open & {
+
+            span {
+
+                &:first-child {
+                    top: 50%;
+                    transform: rotateZ(45deg);
+                    transition-delay: .2s;
+                }
+
+                &:nth-child(2) {
+                    width: 0;
+                    transition: width .2s;
+                }
+
+                &:last-child {
+                    top: 50%;
+                    transform: rotateZ(-45deg);
+                    transition-delay: .2s;
+                }
+            }
+        }
+    }
+}

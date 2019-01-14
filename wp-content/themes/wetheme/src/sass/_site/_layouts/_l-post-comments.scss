@@ -1,0 +1,125 @@
+//sass-lint:disable no-empty-rulesets no-qualifying-elements force-element-nesting no-ids
+//TODO Add complete styles for comments
+ol.comment-list {
+    list-style: none;
+    margin: 0 0 1em;
+    padding: 0;
+    text-indent: 0;
+
+    li {}
+    li.alt {}
+    li.bypostauthor {}
+    li.byuser {}
+    li.comment-author-admin {}
+
+
+    li.comment {
+        border-bottom: 1px solid #ddd;
+        padding: 1em;
+
+        div.vcard {
+
+            cite.fn {
+
+                a.url {
+
+                }
+            }
+
+            img.avatar {
+                border: 5px solid #ccc;
+                float: right;
+                margin: 0 0 20px 20px;
+            }
+
+            img.avatar-32 {}
+            img.photo {}
+            span.says {}
+
+        }
+
+        div.commentmetadata {}
+
+        div.comment-meta {
+            font-size: 11px;
+
+            a {
+                color: #ccc;
+            }
+
+        }
+
+        p {font-size: 12px;}
+
+        ul {
+            font-size: 12px;
+            list-style: none;
+            margin: 0 0 0 20px;
+        }
+
+        div.reply {
+
+            font-size: 11px;
+
+            a {font-weight: bold;}
+
+        }
+
+        ul.children {
+            list-style: none;
+            margin: 12px;
+            text-indent: 0;
+
+            li {}
+
+            li.alt {}
+            li.bypostauthor {}
+            li.byuser {}
+            li.comment {}
+            li.comment-author-admin {}
+
+            li.depth-2 { border-left: 5px solid #ccc; margin: 0 0 10px 10px; }
+            li.depth-3 { border-left: 5px solid #bbb; margin: 0 0 10px 10px; }
+            li.depth-4 { border-left: 5px solid #aaa; margin: 0 0 10px 10px; }
+            li.depth-5 {}
+
+            li.odd {}
+
+        }
+
+    }
+
+    li.even {
+        background: #fff;
+    }
+
+    li.odd {
+        background: #f6f6f6;
+    }
+
+    li.parent {
+        border-left: 5px solid #ddd;
+    }
+
+    li.thread-alt {}
+    li.thread-even {}
+    li.thread-odd {}
+}
+
+#commentform > p.comment-form-author input,
+#commentform > p.comment-form-email input,
+#commentform > p.comment-form-url input,
+#commentform > p.comment-form-comment textarea {
+    display: block; width: 100%; padding: .5rem .75rem; font-size: 1rem; line-height: 1.25; color: #464a4c; background-color: #fff; background-image: none; background-clip: padding-box; border: 1px solid rgba(0, 0, 0, .15); border-radius: .25rem;  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#commentform > p.comment-form-author,
+#commentform > p.comment-form-email,
+#commentform > p.comment-form-url,
+#commentform > p.comment-form-comment {
+    margin-top: 15px; 
+}
+
+#commentform > p.form-submit .submit {
+    display: inline-block; line-height: 1.25; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: .5rem 1rem; font-size: 1rem; border-radius: .25rem; transition: .2s ease-in-out; color: #fff; background-color: #333; font-weight: 600; margin-top: 20px;
+}
