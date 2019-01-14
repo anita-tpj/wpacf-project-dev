@@ -44,7 +44,7 @@
     "url": ""
   },
   "config": {
-    "domain": "wp-starter.local"
+    "domain": "wpacf-project-dev.local"
   },
   "dependencies": {}
 }
