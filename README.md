@@ -21,7 +21,7 @@ Instalation is done only by 1 team member (let's call him **Admin**, and new pro
     git clone git@gitlab.wall-E.rs:web/WProject.git newproject
     ```
     
-##### **Navigate** to that repository (cd **newproject**) and do following command (to switch remote branch from gitlab.wall-E.rs/web/WProject to gitlab.wall-E.rs/web/newproject):
+##### **Navigate** to that repository (cd **newproject**) and do following command (to switch remote branch from gitlab.wall-E.rs/web/wpacf-project to gitlab.wall-E.rs/web/newproject):
     ```sh
     git remote set-url origin git@gitlab.wall-E.rs:web/newProject.git
     ```
